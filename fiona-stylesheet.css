@@ -10,10 +10,10 @@ body {
 .theme{
   --darkest: #580000;
   --dark: #aa1010;
-  --primary: #dd0f0f;
+  --primary: #dd0f0f8d;
   --secondary: #ff4a4a;
   --tertiary: #ff7e7e;
-  --quaternary: rgb(255, 246, 246);
+  --quaternary: rgb(255, 255, 255);
   background-color: var(--quaternary);
 }
 
@@ -35,7 +35,7 @@ body {
   color: #ffffff;
   background-color: white;
   background: rgb(2,0,36);
-  background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%);
+  background-image: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 100%), url("272_MarsInSight_poster-jpg.jpeg");
 }
 
 h1 {
@@ -68,7 +68,7 @@ p {
   color: #ffffff;
   padding-top: 10%;
   padding-bottom: 10%;
-  background: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
+  background-image: linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%), url("272_MarsInSight_poster-jpg.jpeg");
 }
 
 .center {
