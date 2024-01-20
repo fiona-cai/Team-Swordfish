@@ -10,9 +10,9 @@ body {
 .theme{
   --darkest: #580000;
   --dark: #aa1010;
-  --primary: #dd0f0f8d;
-  --secondary: #ff4a4a;
-  --tertiary: #ff7e7e;
+  --primary: #dd0f0fa4;
+  --secondary: #ec3636;
+  --tertiary: #ffb3b3;
   --quaternary: rgb(255, 255, 255);
   background-color: var(--quaternary);
 }
@@ -22,10 +22,7 @@ body {
   src: url(ReemKufi-Regular.ttf)
 }
 
-@font-face{
-  font-family: "handwriting";
-  src: url(Myhandwriting2-Regular.ttf)
-}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 .font2 {
   font-family: "reem kufi", "helvetica", cursive, sans-serif;
@@ -42,25 +39,25 @@ h1 {
   text-align: center;
   filter: brightness(100%);
   font-family: "reem kufi", "helvetica", cursive, sans-serif;
-  font-size: 64px;
+  font-size: 80px;
 }
 
 h2 {
   text-align: center;
   filter: brightness(100%);
-  font-family: "handwriting", "helvetica", cursive, sans-serif;
+  font-family: "Quicksand", "helvetica", cursive, sans-serif;
   font-size: 36px;
 }
 
 h3 {
   text-align: center;
   filter: brightness(100%);
-  font-family: "handwriting", "helvetica", cursive, sans-serif;
+  font-family: "Quicksand", "helvetica", cursive, sans-serif;
   font-size: 24px;
 }
 
 p {
-  font-family: "handwriting", cursive, sans-serif;
+  font-family: "Quicksand", cursive, sans-serif;
   font-size: 18px;
 }
 
@@ -81,10 +78,10 @@ p {
 
 .navbar {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.233);
+  background-color: rgba(0, 0, 0, 0);
   position: sticky;
   border-radius: 25px;
-  height: 10%;
+  height: 12%;
   width: 100%;
   z-index: 3;
   margin-top: 0.5%;
@@ -179,7 +176,7 @@ footer {
   height: min-content;
   position: absolute;
   padding-top: 10px;
-  background: linear-gradient(0deg, var(--primary) 0%, var(--secondary) 100%);
+  background: linear-gradient(180deg, var(--secondary) 0%, var(--dark) 100%);
 }
 
 footer img {
@@ -218,8 +215,8 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   margin: 7%;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 0%;
+  margin-bottom: 0%;
   align-content: center;
   align-items: center
 }
@@ -240,8 +237,8 @@ footer img {
 }
 
 .draw-border {
-  box-shadow: inset 0 0 0 4px var(--secondary);
-  color: var(--secondary);
+  box-shadow: inset 0 0 0 4px var(--dark);
+  color: var(--dark);
   transition: color 0.25s 0.0833333333s;
   position: relative;
   display: block;
@@ -305,6 +302,7 @@ footer img {
 .gallery{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 10%;
 }
 
 .gallery li{
@@ -317,10 +315,10 @@ footer img {
   -o-transition:all 0.8s ease;
   -moz-transition:all 0.8s ease;
   -webkit-transition:all 0.8s ease;
-  top:50px;
-  padding: 4%;
-  width: 30vw;
-  height: 100vh;
+  top:0px;
+  padding: 5%;
+  width: 100%;
+  height: 90vh;
 }
 
 .gallery li:hover{
@@ -329,5 +327,51 @@ footer img {
 
 .gallery img{
   border-radius: 500px;
-  padding: 15%;
+  padding: 10%;
+}
+
+
+
+.alpha {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: 'agency';
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 100;
+  font-size: 5em;
+  transform-origin: center center;
+  transform: translate3d(-50%,-50%,0)scale(1.4);
+  opacity: 0;
+  transition: opacity 4s ease-out, transform 4s ease-out, letter-spacing 4s ease-out, -webkit-filter 3s ease-out, filter 3s ease-out;
+  filter: blur(20px);
+  -webkit-filter: blur(20px);
+  white-space: nowrap;
+  &.in {
+    transform: translate3d(-50%,-50%,0)scale(1);
+    letter-spacing: 0.1em;
+    opacity: 1;
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+}
+
+.mars {
+  width: 75%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  animation: mars 360s infinite linear;
+}
+@keyframes mars {
+  0% {
+    transform: translate(-50%, 0)rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, 0)rotate(360deg);
+  }
 }

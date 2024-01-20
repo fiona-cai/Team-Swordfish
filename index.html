@@ -15,13 +15,16 @@
 <link rel="stylesheet" href="fiona-stylesheet.css">
 <link rel="stylesheet" href="circles.css">
 <link href="/src/css/instagram-widget.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body class=theme>
 
 <nav class="navbar sticky">
   <a href="https://fiona-cai.github.io/swordfish" class="active left"><img src="cropped_image (1).png" height="80%"></a>
-  <a class="left" style= "font-size: 100px; cursor: pointer; filter: opacity(90%);" onclick="openNav()" ><img src="https://www.alvincollege.edu/images/white_hamburger_4.png" height="45"></a>
+  <a class="left" style= "font-size: 100px; cursor: pointer; filter: opacity(90%);" onclick="openNav()" ><img src="burger-menu-svgrepo-com.svg" height="45"></a>
 </nav>
 
 <nav class= "font2 text-center" id="sidenav">
@@ -48,22 +51,49 @@
     <div class="row">
       <div>
         <h2>Hello! we're Team Swordfish,</h2>
-        <p class="text-center">btw this font is my handwriting :)</p>
+        <p class="text-center">(atlantic swordfish are one of the fastest predators in the ocean)</p>
         <p class="desc indent">We are a group of high school students competing in the Canadian CanSat Design Challenge. The goal is to design and build a can-sized payload called a CanSat which will be launched to 1km onboard a rocket to complete a scientific mission. 
 
-            Our CanSat uses a technique called Terrain Relative Navigation to precisely track its position and attitude using only an onboard camera and inertial <span id="dots">...</span><span id="more">navigation system. This is necessary in environments where GPS is not available, like the Moon.
+            Our CanSat uses a technique called Terrain Relative Navigation to precisely track its position and attitude using only an onboard camera and inertial navigation system. This is necessary in environments where GPS is not available, like the Moon.
                 <img src="Screen Shot 2023-12-18 at 1.14.27 AM.png" width="100%">
 
                 Our Cansat will also be be used for 3D mapping of the ground, hazard avoidance, and safe landing site selection, critical for space missions that require landing on other hazardous planetary bodies.
 
 The application of Terrain Relative Navigation extends beyond space missions. It can be used on Earth for robotic exploration in GPS denied areas such as underwater, indoor, caves, radio contested warzones, forests, and urban cities.
 
+
+      </div>
+    </div></div>
+    <div style="height: 150px; overflow: hidden;" >
+      <svg viewBox="0 0 1440 490" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0,49L80,89.8C160,131,320,212,480,253.2C640,294,800,294,960,261.3C1120,229,1280,163,1440,155.2C1600,147,1760,196,1920,245C2080,294,2240,343,2400,367.5C2560,392,2720,392,2880,383.8C3040,376,3200,359,3360,367.5C3520,376,3680,408,3840,400.2C4000,392,4160,343,4320,269.5C4480,196,4640,98,4800,114.3C4960,131,5120,261,5280,261.3C5440,261,5600,131,5760,114.3C5920,98,6080,196,6240,196C6400,196,6560,98,6720,65.3C6880,33,7040,65,7200,106.2C7360,147,7520,196,7680,220.5C7840,245,8000,245,8160,236.8C8320,229,8480,212,8640,187.8C8800,163,8960,131,9120,122.5C9280,114,9440,131,9600,130.7C9760,131,9920,114,10080,130.7C10240,147,10400,196,10560,179.7C10720,163,10880,82,11040,114.3C11200,147,11360,294,11440,367.5L11520,441L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z" style="stroke: none; fill: var(--secondary);">
+        </path>
+      </svg>
+    </div>
+    <div class='box' style="background-color: var(--secondary); margin-top: 0; color:white">
+      
+    <div class="row">
+      
+      <div>
+        <h2>What is a CanSat?</h2>
+        <p class="text-center">A Satellite in A Can</p>
+        <p class="desc indent">A CanSat is a simplified satellite, integrated within the volume and shape of a soft drink can, and weighing between 300 and 350g. The CanSat is then launched by a rocket (or dropped from a drone) up to an altitude of approximately one kilometre. Then its mission begins, collecting air temperature and pressure data as it descends by parachute. Data is either stored on-board (Beginner category) or transmitted by radio (Advanced category), and is analysed after landing. Teams must also design and implement their own secondary mission, of which the possibilities are only limited by the creativity of the students!
+
+
         </span></p>
-        <button onclick="moreorless()" class="font2 btn draw-border" id="myBtn">
+        <button onclick="window.open('https://www.csdcms.ca/index.php/cansat-design-challenge', '_blank')" class="font2 btn draw-border" id="myBtn">
           <span>Read more</span>
         </button>
       </div>
     </div>
+    
+  </div>
+  <div style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);">
+      </path>
+    </svg>
+  </div>
 
     <div class="row" style="margin: 0%;">
         <div>
@@ -71,28 +101,67 @@ The application of Terrain Relative Navigation extends beyond space missions. It
           <ul class="gallery text-center">
             <li class="gallery"><img src="luis.jpg" width="100%"/>
               <h2>Luis Gao</h2>
-              <p>Hi, I’m Luis. I am the leader of Team Swordfish. In my spare time, I like to think about the wonders of the universe. My favourite show is the Cosmos: A Personal Voyage hosted by Carl Sagan.</p>
+              <p>Hey! I’m Luis, a science enthusiast and the leader of Team Swordfish. I'm personally invested in the field of astrophysics and my favourite show is the Cosmos: A Personal Voyage hosted by Carl Sagan. In my spare time, I like to read about philosophy and play the guitar. 
+              </p>
             </li>
             <li class="gallery"><img src="jeffery.jpg" width="100%"/>
-              <p>Jeffery Zhuang</p></li>
+              <h2>Jeffery Zhuang</h2>
+              <p>Hi, I'm Jeffrey. In my free time I develop guidance, navigation, and control systems for UAVs. While I've experimented with terrain relative navigation, I haven't had the opportunity to test these algorithms at high altitudes. I'm grateful for this opportunity to do so through CanSat.
+              </p>
+            </li>
             <li class="gallery"><img src="fiona.jpg" width="100%"/>
               <h2 >Fiona Cai</h2>
-              <p class="desc ">Hey, I'm Fiona, a grade 11 student with a passion for tech. I specialize in creating websites and enjoy competing in tech-related competitions to sharpen my problem-solving skills. </p>
+              <p>Hey, I'm Fiona. I mainly work on the software parts of this project. You can catch me either coding up the randomest things or singing (and something both) whenever I'm free. This is my first time doing something space-related and I'm over the moon excited for this journey!</p>
             </li>
             <li class="gallery"><img src="jacob.jpg" width="100%"/>
-              <p>Jacob Shi</p></li>
+              <h2 >Jacob Shi</h2>
+              <p>I’m Jacob. To me, the CanSat challenge is a fun opportunity to explore the design process. I work on the PCB and reports. In my leisure time, I enjoy watching films. 
+              </p>
+            </li>
             <li class="gallery"><img src="ethan.jpg" width="100%"/>
               <h2 >Ethan So</h2>
               <p>Hi, I am Ethan. I am a grade 11 student who enjoys finance and engineering. I like to do taekwondo in my free time and am very excited for the upcoming CanSat competition in Alberta.</p></li>
             <li class="gallery"><img src="olivia.jpg" width="100%"/>
-              <p>Olivia Huang</p></li>
-            
+              <h2 >Olivia Huang</h2>
+              <p>Hello, I'm Olivia and I'm part of the marketing team for our project. In my spare time, I enjoy painting, taking photos, and watching TV shows. Please check out our Instagram!
+              </p>
+            </li>
           </ul>
 
         </div>
         
       </div>
     </div>
+    <div style="height: 150px; overflow: hidden;" >
+      <svg viewBox="0 0 1440 490" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0,49L80,89.8C160,131,320,212,480,253.2C640,294,800,294,960,261.3C1120,229,1280,163,1440,155.2C1600,147,1760,196,1920,245C2080,294,2240,343,2400,367.5C2560,392,2720,392,2880,383.8C3040,376,3200,359,3360,367.5C3520,376,3680,408,3840,400.2C4000,392,4160,343,4320,269.5C4480,196,4640,98,4800,114.3C4960,131,5120,261,5280,261.3C5440,261,5600,131,5760,114.3C5920,98,6080,196,6240,196C6400,196,6560,98,6720,65.3C6880,33,7040,65,7200,106.2C7360,147,7520,196,7680,220.5C7840,245,8000,245,8160,236.8C8320,229,8480,212,8640,187.8C8800,163,8960,131,9120,122.5C9280,114,9440,131,9600,130.7C9760,131,9920,114,10080,130.7C10240,147,10400,196,10560,179.7C10720,163,10880,82,11040,114.3C11200,147,11360,294,11440,367.5L11520,441L11520,490L11440,490C11360,490,11200,490,11040,490C10880,490,10720,490,10560,490C10400,490,10240,490,10080,490C9920,490,9760,490,9600,490C9440,490,9280,490,9120,490C8960,490,8800,490,8640,490C8480,490,8320,490,8160,490C8000,490,7840,490,7680,490C7520,490,7360,490,7200,490C7040,490,6880,490,6720,490C6560,490,6400,490,6240,490C6080,490,5920,490,5760,490C5600,490,5440,490,5280,490C5120,490,4960,490,4800,490C4640,490,4480,490,4320,490C4160,490,4000,490,3840,490C3680,490,3520,490,3360,490C3200,490,3040,490,2880,490C2720,490,2560,490,2400,490C2240,490,2080,490,1920,490C1760,490,1600,490,1440,490C1280,490,1120,490,960,490C800,490,640,490,480,490C320,490,160,490,80,490L0,490Z" style="stroke: none; fill: var(--secondary);">
+        </path>
+      </svg>
+    </div>
+    <div class='box' style="background-color: var(--secondary); margin-top: 0; color:white">
+      
+    <div class="row">
+      
+      <div>
+        <h2>Sponsors</h2>
+        <p class="text-center">Thank you for making this project possible</p>
+        <p class="desc indent">Coming soon
+
+
+        </span></p>
+        <button onclick="window.open('https://www.csdcms.ca/index.php/cansat-design-challenge', '_blank')" class="font2 btn draw-border" id="myBtn">
+          <span>Read more</span>
+        </button>
+      </div>
+    </div>
+    
+  </div>
+  <div style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+      <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: var(--secondary);">
+      </path>
+    </svg>
+  </div>
     <div class="row">
       <div class="text-center">
         <h2> Instagram</h2>
@@ -117,6 +186,7 @@ The application of Terrain Relative Navigation extends beyond space missions. It
 
   <footer id="contact">
     <h1 class="glow">Contact Us</h1>
+    <p class="text-center">Please email us at teamswordfishbss@gmail.com</p>
     <a href="mailto:teamswordfishbss@gmail.com" class="invert"><img src="https://speakliveplay.com/wp-content/uploads/2019/06/email-icon-png-download-icons-logos-emojis-email-icons-2400.png"></a>
     <a href="https://instagram.com/team__swordfish" class="invert"><img src="https://www.edigitalagency.com.au/wp-content/uploads/new-Instagram-logo-black-glyph.png"></a>
   </footer>
