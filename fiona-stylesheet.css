@@ -302,6 +302,11 @@ footer img {
   outline: transparent;
 }
 
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .gallery li{
   text-align: left;
   display:inline-block;
@@ -313,10 +318,16 @@ footer img {
   -moz-transition:all 0.8s ease;
   -webkit-transition:all 0.8s ease;
   top:50px;
-  padding: 1%;
+  padding: 4%;
   width: 30vw;
+  height: 100vh;
 }
 
 .gallery li:hover{
   top:0px;
+}
+
+.gallery img{
+  border-radius: 500px;
+  padding: 15%;
 }
