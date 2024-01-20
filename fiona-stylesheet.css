@@ -303,7 +303,7 @@ footer img {
 }
 
 .gallery li{
-  text-align:center;
+  text-align: left;
   display:inline-block;
   list-style:none;
   position:relative;    
@@ -314,6 +314,7 @@ footer img {
   -webkit-transition:all 0.8s ease;
   top:50px;
   padding: 1%;
+  width: 30vw;
 }
 
 .gallery li:hover{
