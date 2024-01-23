@@ -47,6 +47,7 @@ h2 {
   filter: brightness(100%);
   font-family: "Quicksand", "helvetica", cursive, sans-serif;
   font-size: 36px;
+  line-height: 50px;
 }
 
 h3 {
@@ -58,7 +59,11 @@ h3 {
 
 p {
   font-family: "Quicksand", cursive, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+}
+
+img {
+  padding: 0%;
 }
 
 .header2 {
