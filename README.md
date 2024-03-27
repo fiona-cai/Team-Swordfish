@@ -1,7 +1,8 @@
 
 <div align="center">
+  <h3>Bayview CanSat 2023-2024</h3>
   <h1>Team Swordfish</h1>
-  <h2>2023-2024</h2>
+  
   <img src="https://fiona-cai.github.io/Team-Swordfish/cropped_image%20(1).png">
 
 </div>
